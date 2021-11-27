@@ -1,7 +1,7 @@
 /* change these */
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -12,26 +12,34 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: #f2f2f2;
-  --link-color: #bacbd9;
-  --link-hover-color: #575923;
-  --primary-font: "Poppins", sans-serif;
-  --secondary-font: "Montserrat", sans-serif;
+  --bg-color: #ECE0DA;
+  --link-color: #D9695F;
+  --link-hover-color: #7E8579;
+  --color-4:#BF8969;
+  --primary-font: 'Raleway', sans-serif;
+  --secondary-font:'Crimson Pro', serif;;
   --main-text-color: #000;
 
   --white-space: 1rem;
 }
 
-button {
-  transition: all 3s;
+#button{
+  cursor: pointer;
+}
+.button1{
+  color:#ECE0DA; 
+  font-size: 28px;
+  text-align: left;
+  display: block;
+  top:91.5%;
+  left:10.5%;
+  position: absolute;
+  text-transform: uppercase;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  
 }
 
-button:hover {
-  background-color: var(--link-hover-color);
-  animation-name: pulse;
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
-}
 @keyframes pulse {
   0%,
   100% {
@@ -47,8 +55,7 @@ button:active {
 }
 
 a:hover {
-  color: #575923;
-  text-decoration: underline;
+  color: #7E8579;
 }
 html {
   font-size: 100%;
@@ -147,10 +154,6 @@ ul li:last-child {
   background-color: var(--color-4);
 }
 
-.color-swatch-5 {
-  background-color: var(--color-5);
-}
-
 .textures li {
   height: 50%;
   width: 50%;
@@ -172,33 +175,7 @@ ul li:last-child {
   width: 100%;
   height: 100%;
 }
-.article-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 0.2em solid black;
-  width: 750px;
-  padding: 20px;
-  font-family: var(--primary-font);
-}
 
-#cph-img {
-  width: 130%;
-  height: 130%;
-}
-.description {
-  margin-left: 40px;
-}
-.article-container h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-family: var(--primary-font);
-}
-.article-container p {
-  font-style: italic;
-  font-size: 1rem;
-  color: #000;
-  margin: 0.5rem 0;
-}
 .text {
   font-family: var(--secondary-font);
   color: #000;
@@ -251,6 +228,8 @@ p.typography-sample {
   font-family: var(--secondary-font);
   line-height: 1.5;
   max-width: 960px;
+  font-size: 20px;
+  
 }
 
 strong {
@@ -287,6 +266,7 @@ p[class*="font-details-"] {
 
 footer {
   font-style: italic;
+  text-align: right;
 }
 
 @media (min-width: 800px) {
